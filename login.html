@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>login page</title>
+	<link rel="stylesheet" href="loginstyle.css">
+	<script >
+		function summit() {
+			var em=document.getElementById('email').value;
+			var ps=document.getElementById('password').value;
+			console.log(em)
+			if (em.length > 5 & ps.length > 5) {
+				if (em == 'udityapatel2004@gmail.com' & ps == '123450') {
+					console.log(em , ps)
+					window.open('C:/Users/Aditya Patel/Documents/UDITYA/html/cool/hackthon uditya/index.html');
+					// window.open('home.html');
+				} else {
+					alert('account is not athonticate')
+				}
+			} else {
+				alert('fill email')
+			}
+		     
+    // window.open('about:blank','','titlebar=yes,toolbar=yes,location=yes,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=700,height=300,left=0,top=0');
+}
+	</script>
+</head>
+<body>
+	<div id="back">
+		<form action="" method="post" id="login">
+		    <div id="page">
+		    	<h1>log in</h1>
+		    	<br>
+		    	<input class="filler" placeholder="email..." name="email" type="email" id="email">
+		    	<input class="filler" placeholder="password..." name="password" type="password" id="password">
+                <br>
+				<p style="position: absolute; left: 50px;bottom: 200px;color: rgb(183, 185, 187);"><input type="checkbox" name="terms" id="checker"> agree terms & services</p>
+				<br>
+                <input onclick="summit()" type="submit" id="submit"></button>
+		    	<br><br><br><br><br><br>
+		    	
+		    	
+		    </div>
+		</form>
+		
+	</div>
+</body>
+</html>

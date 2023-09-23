@@ -1,0 +1,255 @@
+body{
+    margin:0;
+    padding:0;
+    background: #ffffff;
+}
+
+.to{           
+    width: 100%;
+    height: 80px;
+    background: green;  
+    color: white;
+    text-align:center;
+}
+.title{
+    position: relative;  
+    
+    color: rgb(0, 0, 0);
+    font-size:70px;
+    background-size: 100% 80px;
+    background-image: url(photo/flag.png);
+    background-repeat: no-repeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.drop-chat-content{
+    height: 50px;
+    width: 150px;
+    background: white;
+    color:green;
+    list-style:none;
+    text-align:center;
+    font-size:22px;
+    border-radius: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: 47px;
+    
+
+}
+.drop-chat-content:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
+.drop-chat-content:hover a{
+    color: rgb(255, 255, 255);
+   
+}
+
+a{
+    color:green;  
+    
+    text-decoration: none;
+    
+}
+
+.drop-chat{
+    background: #0031d1;
+    position:relative;
+    top:-47px;
+    width: 100%;
+
+}
+.drop-chat li a .chat-div{
+    background-color: green;
+}
+
+.drop-chat-content:hover .chat-div{
+    background-color: rgb(255, 255, 255);
+}
+.drop-chat-content:hover .chat-dive{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.drop-chat-background{
+    box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.81);
+    background-color: rgb(255, 253, 255);
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+#search-bar{
+    position: absolute;
+    top: 10px;
+    left: 64%;
+    height: 29px;
+    width:30%;
+    outline: none;
+    border: none;
+    border-bottom:2px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+    color: green;  
+   
+}
+#search-bar::placeholder{
+    color: rgb(179, 135, 223);
+}
+.search-div{
+    display: none;
+    height: 50px;
+    width: 150px;
+    background: white;
+    color:green;
+    list-style:none;
+    text-align:center;
+    font-size:22px;
+    border-radius: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: 47px;
+}
+.search-div:hover{
+    background-color: green;
+}
+.search-div:hover .fa-search{
+    color: rgb(255, 255, 255);
+}
+#menu{display: none;
+width: 50%;}
+.menu{
+    width: 40%; 
+    text-align: center;
+    border: 2px solid green;
+    position: absolute;
+    top: 133px;
+    left: 54px;
+    display: none; 
+    
+}
+.menu li{
+    list-style: none;  
+    padding: 17px;
+    color: #8a13ff;
+    
+    background-color: rgb(255, 255, 255);
+}
+.menu li:hover{
+    color: white;
+    background-color: green;
+}
+#second-body{
+    display: none;
+    background-color: #898989;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 79;
+}
+
+#second-body li{
+    list-style: none;
+    padding: 10px;
+}
+#second-body li:hover{
+    background-color: #141414;
+    color: white;
+}
+
+#about{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0%;
+    background-color: red;
+}
+/*resonsive work----------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:0px) and (max-width:500px) {
+     
+  #a{display: none;}
+  #b{display: none;}
+  #c{display: none;}
+  #d{display: none;}
+  #e{display: none;}
+  #search-bar{display: none;width: 100%;
+  left: 0;
+  top: 112%;
+}
+  .search-div{display: block;}
+  #menu{display: block;width: 40%;}
+  .title{font-size: 20px;
+    background-size: 100% 22px;}
+    .drop-chat-background{top: 25px;}
+}
+
+@media only screen and (min-width:500px) and (max-width:940px) {
+     
+  #a{display: none;}
+  #b{display: none;}
+  #c{display: none;}
+  #d{display: none;}
+  #e{display: none;}
+  #search-bar{display: none;width: 100%;left: 0;top: 112%;}
+  .search-div{display: block;}
+  #menu{display: block;}
+  .title{font-size: 36px;
+    background-size: 100% 37px;}  
+    .drop-chat-background{
+        top: 44px;
+    }
+}
+ @media only screen and (min-width:940px) and (max-width:1110px) {
+    #search-bar{display: none;width: 100%;left: 0;top: 112%;}
+    .search-div{display: block;}
+    .title{font-size: 70px;
+        background-size: 100% 80px;}
+}
+ @media only screen and (min-width:1110px) and (max-width:1300px) {
+    #search-bar{width: 20%;left: 75%; }
+    .title{font-size: 70px;
+        background-size: 100% 80px;}  
+    
+ }
+/*reponsive end -----------------------------------------------------------------------------------------------------------------*/        
+/* #background-imager{
+    width: 100%;
+    height: 79px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+} */
+
+
+
+#social-drawer{
+    width: 100%;
+    height:20%;
+    background-color: rgb(160 223 170);
+    position: relative;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+
+.tech-titians{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 21px 28px 18px -6px rgba(0,0,0,0.5);
+-webkit-box-shadow: 21px 28px 18px -6px rgba(0,0,0,0.5);
+-moz-box-shadow: 21px 28px 18px -6px rgba(0,0,0,0.5);
+    
+}
+
+.bin{
+    width: auto;
+    height: 400px;
+    
+}
