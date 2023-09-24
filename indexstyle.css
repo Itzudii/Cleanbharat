@@ -230,6 +230,12 @@ p {
     display: grid;
     place-content: center;
 }
+h1{
+    cursor:pointer;
+    display: grid;
+    place-items:center;
+    position: relative;
+}
 
 h2{
     color: green;
@@ -279,23 +285,21 @@ background-color: white;
     .bin{height:215px ;}
     video{width:215px ;}
     
-    .title{
-        font-size: 20px;
-        background-size: 100% 22px;}
+    .title{font-size: 20px;background-size: 100% 22px;}
         
-        .drop-chat-background{top: 25px;}
+    .drop-chat-background{top: 22px;}
+    p{margin-left:0 ;margin-right:0 ;}
+    h2{margin-left:0 ;margin-right:0 ;}
     }
     
-    @media only screen and (min-width:500px) and (max-width:940px) {
+@media only screen and (min-width:500px) and (max-width:940px) {
 
-        #search-bar{display: none;width: 100%;left: 0;top: 112%;}
-
-  .title{font-size: 36px;background-size: 100% 37px;}  
-
-  .drop-chat-background{top: 44px;}
+    #search-bar{display: none;width: 100%;left: 0;top: 112%;}
+    .title{font-size: 36px;background-size: 100% 37px;}  
+    .drop-chat-background{top: 41px;}
 }
 
- @media only screen and (min-width:940px) and (max-width:1110px) {
+@media only screen and (min-width:940px) and (max-width:1110px) {
     #search-bar{display: none;width: 100%;left: 0;top: 112%;}
     .search-div{display: block;}
     .title{font-size: 70px;background-size: 100% 80px;}
